@@ -19,7 +19,7 @@
     >
       <defs>
         <clipPath id="myClip">
-          <circle cx="133" cy="410" r="0" />
+          <circle cx="200" cy="620" r="0" />
         </clipPath>
 
         <g id="tree">
@@ -62,25 +62,25 @@
         r: 0;
       }
       to {
-        r: 401px;
+        r: 620px;
       }
     }
 
     @keyframes scaleUpLeaf {
       0% {
-        transform: scale(0.1) ;
+        transform: scale(0.1) rotate(10deg); 
       }
       100% {
-        transform: scale(1);
+        transform: scale(1) rotate(0); 
       }
     }
 
     @keyframes scaleUp {
       0% {
-        transform: scale(0.1) rotate(10deg);
+        transform: scale(0.1) translateY(40%);
       }
       100% {
-        transform: scale(0.4) rotate(0deg);
+        transform: scale(0.4) translateY(0%);; 
       }
     }
 
@@ -93,7 +93,7 @@
     }
 
     #leaf1 {
-      transform-origin: 140pt 170pt;
+      transform-origin: 120pt 120pt;
     }
 
     .leaf {
